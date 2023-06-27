@@ -107,7 +107,7 @@ def masmProjectWin64():
 
     try:
         
-        copyConfigFile(projectPath+"/mlw.conf")
+        copyConfigFile(projectPath+"/config.json")
 
         createFile( projectPath+"/makeit.bat", win_masm_64.makeIt(config) )
         if config["appType2"] == "executable":
