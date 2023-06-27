@@ -1,0 +1,48 @@
+{
+	"projectName" : "test",
+	"author" : "anonymous",
+	"email" :	"anonymous",
+	"society" : "anonymous",
+
+	"os" : "windows",
+	"architecture" : "64",
+	"language" : "masm",
+	"appType" : "console",
+	"appType2" : "executable",
+
+	"compilerPath" : "'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.33.31629\\bin\\Hostx64\\x64\\ml64.exe'",
+	"libPath" : "'C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.19041.0\\um\\x64\\'",
+
+	"out" : "release",
+
+	"imports" : {
+		"dll" : [
+			"ntdll",
+			"Kernel32"
+		],
+		"function" : {
+			"CreateFileA" : 7,
+			"ReadFile" : 5
+		}
+	},
+
+	"procedures" : [
+		"popup"
+	],
+
+	"structures" : [
+		"STARTUPINFOA",
+		"PROCESS_INFORMATION"
+	],
+
+	"strings" : {
+		"pipeName" : "\\\\.\\mailslot\\MyFirstMail"
+	},
+
+	"datas" : {
+		"startInfo" : "_STARTUPINFOA <>",
+		"procInfo" : "_PROCESS_INFORMATION <>"
+	}
+}
+
+
